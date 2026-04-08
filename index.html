@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <title>Happy Birthday -Darling</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Welcome Modal -->
+  <div class="modal-overlay" id="welcomeModal">
+    <div class="modal-content">
+      <div class="modal-hearts" aria-hidden="true">
+        <!-- <span>💖</span><span>💕</span><span>💗</span><span>💖</span><span>💕</span> -->
+      </div>
+      <h2>✨ Something Special For You ✨</h2>
+      <p>Click to enter and celebrate this special day</p>
+      <button class="btn btn-primary" id="enterBtn">Click To Check 💖</button>
+    </div>
+  </div>
+
+  <!-- Background Decorations -->
+  <div class="bg-decorations" aria-hidden="true">
+    <div class="balloon balloon-1">🎈</div>
+    <div class="balloon balloon-2">🎈</div>
+    <div class="balloon balloon-3">🎈</div>
+    <div class="balloon balloon-4">🎈</div>
+    <div class="cake cake-1">🎂</div>
+    <div class="cake cake-2">🍰</div>
+    <div class="confetti confetti-1">🎊</div>
+    <div class="confetti confetti-2">🎉</div>
+    <div class="confetti confetti-3">✨</div>
+    <div class="star star-1">⭐</div>
+    <div class="star star-2">⭐</div>
+  </div>
+
+  <main class="main-continuous">
+    <!-- HOME Page -->
+    <section class="page page-home" id="page-home">
+      <div class="hero">
+        <div class="hearts-container" aria-hidden="true">
+          <span class="heart-float">💖</span>
+          <span class="heart-float">💕</span>
+          <span class="heart-float">💗</span>
+          <span class="heart-float">💖</span>
+          <span class="heart-float">💕</span>
+          <span class="heart-float">💗</span>
+          <span class="heart-float">💖</span>
+          <span class="heart-float">💕</span>
+          <span class="heart-float">💗</span>
+          <span class="heart-float">💖</span>
+        </div>
+        <h1>Happy Birthday Baby 💖</h1>
+        <p class="subtitle">You make every day brighter. Today, we celebrate you and the joy you bring into our lives.</p>
+        <div class="scroll-hint">↓ Scroll Down ↓</div>
+      </div>
+    </section>
+
+    <!-- CELEBRATE Page -->
+    <section class="page page-celebrate" id="page-celebrate">
+      <div class="celebrate-wrap">
+        <div class="book-container">
+          <div class="book">
+            <div class="book-spine" aria-hidden="true"></div>
+            <div class="book-bookmark" aria-hidden="true"></div>
+            <div class="book-page-left">
+              <p>Today is not just your birthday,</p>
+            </div>
+            <div class="book-page-right">
+              <p>it's the day the world became more beautiful 💖</p>
+            </div>
+          </div>
+        </div>
+        <button class="btn btn-primary btn-celebrate" id="celebrateBtn">Let's Cut The Cake! 🎂</button>
+      </div>
+    </section>
+
+    <!-- Cake Cutting Modal -->
+    <div class="cake-modal" id="cakeModal">
+      <div class="cake-modal-content">
+        <div class="cake-animation">
+          <div class="cake-display">🎂</div>
+          <div class="knife-animation" aria-hidden="true"></div>
+          <div class="countdown" id="countdown"></div>
+        </div>
+        <p class="cake-message">Cutting the cake...</p>
+        <div class="confetti-effect" aria-hidden="true">
+          <span>🎉</span><span>✨</span><span>🎊</span><span>🎁</span><span>💖</span>
+          <span>🎉</span><span>✨</span><span>🎊</span><span>🎁</span><span>💖</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT HER Page -->
+    <section class="page page-about" id="page-about">
+      <div class="about-intro section">
+        <h1 class="page-title">About You</h1>
+        <p class="page-subtitle">The little things that make you so special</p>
+      </div>
+      <div class="qualities-grid">
+        <article class="quality-card">
+          <div class="quality-icon icon-heart" aria-hidden="true"></div>
+          <h3>Kind Heart♥️</h3>
+          <p>Your warmth and compassion touch everyone around you. You always know how to make others feel seen and loved.</p>
+        </article>
+        <article class="quality-card">
+          <div class="quality-icon icon-star" aria-hidden="true"></div>
+          <h3>Radiant Spirit✨</h3>
+          <p>You shine with positivity and grace. Your smile lights up the room and your energy is truly contagious.</p>
+        </article>
+        <article class="quality-card">
+          <div class="quality-icon icon-sparkle" aria-hidden="true"></div>
+          <h3>Unique Sparkle⌛</h3>
+          <p>There's no one quite like you. Your quirks, dreams, and personality make you one of a kind.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- MEMORIES Page -->
+    <section class="page page-memories" id="page-memories">
+      <div class="memories-intro section">
+        <h1 class="page-title">Our Memories</h1>
+        <p class="page-subtitle">Polaroid moments we'll treasure forever</p>
+      </div>
+
+      <div class="polaroid-grid">
+        <figure class="polaroid">
+          <div class="polaroid-img-wrap">
+            <img src="https://picsum.photos/300/400?random=1" alt="Memory 1" loading="lazy">
+          </div>
+          <figcaption class="polaroid-caption">Sunset dreams ✨</figcaption>
+        </figure>
+        <figure class="polaroid">
+          <div class="polaroid-img-wrap">
+            <img src="https://picsum.photos/300/400?random=2" alt="Memory 2" loading="lazy">
+          </div>
+          <figcaption class="polaroid-caption">Sweet moments 💕</figcaption>
+        </figure>
+        <figure class="polaroid">
+          <div class="polaroid-img-wrap">
+            <img src="https://picsum.photos/300/400?random=3" alt="Memory 3" loading="lazy">
+          </div>
+          <figcaption class="polaroid-caption">Forever & always</figcaption>
+        </figure>
+        <figure class="polaroid">
+          <div class="polaroid-img-wrap">
+            <img src="https://picsum.photos/300/400?random=4" alt="Memory 4" loading="lazy">
+          </div>
+          <figcaption class="polaroid-caption">Adventures together 🌸</figcaption>
+        </figure>
+        <figure class="polaroid">
+          <div class="polaroid-img-wrap">
+            <img src="https://picsum.photos/300/400?random=5" alt="Memory 5" loading="lazy">
+          </div>
+          <figcaption class="polaroid-caption">Making memories</figcaption>
+        </figure>
+        <figure class="polaroid">
+          <div class="polaroid-img-wrap">
+            <img src="https://picsum.photos/300/400?random=6" alt="Memory 6" loading="lazy">
+          </div>
+          <figcaption class="polaroid-caption">You & me 💖</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- MESSAGE Page -->
+    <section class="page page-message" id="page-message">
+      <div class="message-container">
+        <h1 class="page-title">A Message For You Baby</h1>
+        <div class="message-box">
+          <p>Dear meri jaan,</p>
+          <p>On your special day, I want you to know how much you mean to me. Your kindness, your smile, and your beautiful spirit light up my life every single day.</p>
+          <p>You have an incredible way of making everyone around you feel valued and loved. Never stop being the amazing person you are.</p>
+          <p>I wish you a year filled with joy, adventure, laughter, and all the happiness you deserve.</p>
+          <p>You're absolutely wonderful, and I'm grateful for you every day.</p>
+         
+          <p style="margin-top: 2rem; font-family: var(--font-handwritten); font-size: 1.3rem;">With all my love,<br>💖</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- WISH Page -->
+    <section class="page page-wish" id="page-wish">
+      <div class="wish-container">
+        <h1 class="page-title">Birthday Wishes</h1>
+        <div class="wish-list">
+          <div class="wish-item">🌟 May your dreams come true</div>
+          <div class="wish-item">💝 May you find endless happiness</div>
+          <div class="wish-item">🎉 May every day be a celebration</div>
+          <div class="wish-item">🌈 May you spread your light everywhere</div>
+          <div class="wish-item">💪 May you achieve all your goals</div>
+          <div class="wish-item">❤️ May you always know how loved you are</div>
+          <div class="wish-item">❤️ you are my world meri jaan,</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- THANK YOU Page -->
+    <section class="page page-thankyou" id="page-thankyou">
+      <div class="thankyou-container">
+        <h1 class="page-title">Thank You</h1>
+        <p class="thankyou-text">Thank you for being the incredible person you are. For your laughter, your kindness, and for making life more colorful just by being in it.</p>
+        <div class="thank-you-hearts" aria-hidden="true">
+          <!-- <span>💖</span><span>💕</span><span>💗</span> -->
+        </div>
+        <p class="signature">Happy Birthday, Baby! 🎂✨</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    Made with <span class="heart">♥</span> for Baby · Happy Birthday Navab Sahab,
+    Shruti love's you a lot baby..
+  </footer>
+
+  <script src="main.js"></script>
+  
+
+</body>
+</html>
